@@ -1,38 +1,28 @@
-
 package factorial;
 
-
+/**
+ * Esta programa sirve para factorizar un número.
+ *
+ * @author tperezrodriguez
+ */
 public class Factorial {
 
-
+    /**
+     * Método main del programa
+     *
+     * @param args argumentos del main
+     */
     public static void main(String[] args) {
 
+        int num;
+        int factorizado;
 
-    int j;
-    int f;
+        num = 8;
 
-  
-   j = 8;    
-   
-
-    
-   int i;
-   if (j == 0)
-f = 1;
-   else
-   {
-f = 1;
-for (i = j; i >= 1; i--)
-{
-    f = f * i;
-}
-   }    
-  
- 
-
-System.out.println(f); 
-
+        CalcularFactorizado calculo1 = new CalcularFactorizado();
+        factorizado = calculo1.calcularNumero(num);
+        System.out.println(factorizado);
 
     }
-    
+
 }
